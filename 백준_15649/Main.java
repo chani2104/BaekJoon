@@ -21,7 +21,7 @@ public class Main {
         backTracking(0);
     }
 
-    static void backTracking(int count) {   // 몇 번째 숫자인지 Count
+    static void backTracking(int count) {   // 특정 조건일 때 돌아오게 하는 BackTracking
         if (count == m) {
             for (int i = 0; i < m; i++)
                 System.out.print(arr[i] + " ");
