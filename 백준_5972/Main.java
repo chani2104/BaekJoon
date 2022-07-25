@@ -59,7 +59,7 @@ public class Main {
             for (int i = 0; i < weight.get(minIdx).size(); i++) {
                 if (dist[minIdx] + weight.get(minIdx).get(i).weight < dist[weight.get(minIdx).get(i).index]) {
                     dist[weight.get(minIdx).get(i).index] = dist[minIdx] + weight.get(minIdx).get(i).weight;
-                    pq.add(new Node(weight.get(minIdx).get(i).index, weight.get(minIdx).get(i).weight));
+                    pq.add(new Node(weight.get(minIdx).get(i).index, dist[weight.get(minIdx).get(i).index]));
                 }
             }
         }
